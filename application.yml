@@ -7,8 +7,8 @@
 
 spring:
   profiles: dev
-    application:
-      name: microservicecloud-config-dev
+  application:
+    name: microservicecloud-config-dev
 
 #spring:
 #  profiles:
