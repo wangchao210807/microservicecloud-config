@@ -10,19 +10,9 @@ spring:
   application:
     name: microservicecloud-config-dev
 
-#spring:
-#  profiles:
-#    active:
-#    - dev
-#
-#---
-#spring:
-#  profiles: dev
-#  application:
-#    name: microservicecloud-config-dev
-#
-#---
-#spring:
-#  profiles: test
-#  application:
-#    name: microservicecloud-config-test
+---
+
+spring:
+  profiles: test
+  application:
+    name: microservicecloud-config-test
