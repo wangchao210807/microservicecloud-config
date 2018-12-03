@@ -1,13 +1,28 @@
-﻿server: 
-  port: 3344 
-  
+﻿spring:
+  profiles:
+    active:
+    - dev
+
+---
+
 spring:
-  application:
-    name:  microservicecloud-config
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/wangchao210807/microservicecloud-config
-          username: wangchao210807
-          password: 2612999pgf
+  profiles: dev
+    application:
+      name: microservicecloud-config-dev
+
+#spring:
+#  profiles:
+#    active:
+#    - dev
+#
+#---
+#spring:
+#  profiles: dev
+#  application:
+#    name: microservicecloud-config-dev
+#
+#---
+#spring:
+#  profiles: test
+#  application:
+#    name: microservicecloud-config-test
